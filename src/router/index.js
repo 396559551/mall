@@ -11,13 +11,26 @@ const routes = [
   },
   {
     path: '/login',
-    name: 'login',
+    name: 'Login',
     component: () => import('../components/Login')
   },
   {
     path: '/home',
-    name: 'home',
-    component: () => import('../components/Home')
+    name: 'Home',
+    component: () => import('../components/Home'),
+    redirect: '/welcome',
+    children: [
+      {
+        path: '/welcome',
+        name: 'Welcome',
+        component: () => import('../components/Welcome')
+      },
+      {
+        path: '/users',
+        name: 'Users',
+        component: () => import('../components/user/Users')
+      }
+    ]
   },
 
 ]
