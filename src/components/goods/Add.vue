@@ -107,7 +107,6 @@
 <script>
 import _ from 'lodash'
 export default {
-  name: "Add",
   data () {
     return {
       // 步骤条默认激活 与左侧Tab联动

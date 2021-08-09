@@ -163,7 +163,7 @@ export default {
     },
     async showProgressDialog () {
       // 供测试的物流单号：1106975712662
-      const { data: res } = await this.$http.get('/kuaidi/804909574412544580')
+      const { data: res } = await this.$http.get('/kuaidi/1106975712662')
       if (res.meta.status !== 200) {
         return this.$message.error('获取物流进度失败!')
       }

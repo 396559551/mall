@@ -20,8 +20,8 @@
         :columns="columns"
         :selection-type="false"
         :expand-type="false"
-        index-text="序号"
-
+        index-text="#"
+        :show-row-hover="false"
         show-index
         border
       >
@@ -302,15 +302,13 @@ export default {
     }
   }
 }
-
 </script>
 
 <style lang='less' scoped>
 .treeTable {
   margin-top: 20px;
 }
- //.el-cascader {
- //  width: 100%;
- //
- //}
+// .el-cascader {
+//   width: 100%;
+// }
 </style>

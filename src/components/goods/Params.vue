@@ -425,7 +425,7 @@ export default {
       row.inputVisible = true
       //   让输入框自动获取焦点
       // $nextTick方法的作用：当页面元素被重新渲染之后，才会至指定回调函数中的代码
-      this.$nextTick(() => {
+      this.$nextTick(_ => {
         this.$refs.saveTagInput.$refs.input.focus()
       })
     },
